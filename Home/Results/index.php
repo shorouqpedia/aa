@@ -29,7 +29,7 @@
         </li>
         
         <li style="float:left">
-            <a href="D:\Graduation Project\Project\Home\Home.html">
+            <a href=/shtube/home>
                 <img src="img/DSHELDON.png" height="70" width="250" style="padding-top: 0px">
             </a>
         </li>
@@ -37,7 +37,7 @@
         <li style="
                    position:absolute;
                    left:25%;
-                   top:2%;">
+                   padding:15;">
             <form class="Searching" action="">
                 <input 
                        name="q" 
@@ -50,7 +50,7 @@
                                color: #919191;
                                position:absolute;
                                left:93%;
-                               top:8%;" 
+                               top:19%;" 
                         type="submit">
                     
                     <i class="fa fa-search">
@@ -186,7 +186,8 @@ if (true) {
                       $videoId = $searchResult['id']['videoId'];
                       $description = $searchResult['snippet']['description'];
                       $videoLink = 'https://www.youtube.com/watch?v=' . $videoId;
-                      $video = array('title'=>$title,'video'=>$videoLink,'description'=>$description,'img'=>$img);
+                      $video = array('title'=>$title,'video'=>$videoLink,'description'=>$description,'img'=>$img,
+                                     'category'=>'Education');
                       array_push($videos,$video);
                       
                      
@@ -215,7 +216,8 @@ if (true) {
                       $videoId = $searchResult['id']['videoId'];
                       $description = $searchResult['snippet']['description'];
                       $videoLink = 'https://www.youtube.com/watch?v=' . $videoId;
-                      $video = array('title'=>$title,'video'=>$videoLink,'description'=>$description,'img'=>$img);
+                      $video = array('title'=>$title,'video'=>$videoLink,'description'=>$description,'img'=>$img,
+                                     'category'=>'Science & Technology');
                       array_push($videos,$video);}
         
 //        echo '<pre>';                

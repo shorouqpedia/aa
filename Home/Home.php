@@ -30,7 +30,7 @@
                          left:35.5%;
                          top:35%;">
                 <a 
-                   href="" 
+                   href="Home.php" 
                    style="
                           text-decoration:none;
                           font-size:35pt;
